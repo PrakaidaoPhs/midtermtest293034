@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+{% for x in Placedata %}
+{{x.place_id}}
+{{x.name}}
+{{x.location}}
+{{x.description}}
+{{x.opening_hours}}
+{{x.closing_hours}}
+{{x.image}}
+{% endfor %}
+</div>
+{% endblock content %}
