@@ -20,6 +20,6 @@ def manage(request): #จัดการข้อมูล
     return render(request,'show.html') #ชื่อไฟล์ที่จะแสดง
 
 def delete_place(request,pk):
-    return redirect('/manage_drug')
+    return redirect('/manage_place')
 
 
