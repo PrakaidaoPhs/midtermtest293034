@@ -13,7 +13,7 @@ def list(request):
 def manage(request):
     show_emp = Place.objects.all()
     context = {'Placedata':show_emp}
-    return render(request,'list.html',context)
+    return render(request,'show.html',context)
 
 def add(request): #เพิ่มข้อมูล
     if request.method == "POST":
