@@ -10,6 +10,11 @@ def list(request):
     context = {'Placedata':show_emp}
     return render(request,'list.html',context)
 
+def manage(request):
+    show_emp = Place.objects.all()
+    context = {'Placedata':show_emp}
+    return render(request,'list.html',context)
+
 def add(request): #เพิ่มข้อมูล
     if request.method == "POST":
         table = Place()
